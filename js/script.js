@@ -2,7 +2,7 @@
 
 const arrayCartelas = []
 
-for (let index = 0; index < 2; index++) {
+for (let index = 0; index < 10; index++) {
     const cartela = [];
     for (let index = 0; index < 3; index++) {
        while (true) {
@@ -74,8 +74,12 @@ function confereCartela(numsorteados) {
                         const bateu = document.querySelector(".bateu")
                         
                         bateu.style.display = 'grid'
-                        beteu.innerHTML = `<p>Cartela ${cloneCartelas.indexOf(cloneCartela) + 1} bateu!</p>`;
+                        closeBtn = document.querySelector("#closeWindow");
+                        closeBtn.innerHTML = `<p id="cb">Cartela ${cloneCartelas.indexOf(cloneCartela) + 1} bateu!</p>`;
                         
+                        const displayBateu = document.querySelector(".N3");
+                        displayBateu.innerHTML = `<p id="displayGanhou">Cartela ${cloneCartelas.indexOf(cloneCartela) + 1} bateu!</p>`;
+
                     }
                 };
             }
