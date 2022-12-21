@@ -73,7 +73,7 @@ function confereCartela(numsorteados) {
 
                         const bateu = document.querySelector(".bateu")
                         
-                        bateu.style.display = 'grid';
+                        bateu.style.display = 'grid'
                         beteu.innerHTML = `<p>Cartela ${cloneCartelas.indexOf(cloneCartela) + 1} bateu!</p>`;
                         
                     }
